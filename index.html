@@ -22,32 +22,667 @@
 
   <!-- Services Section -->
   <section class="services">
-    <h2 class="section-title">Services Offered</h2>
+    <h2 class="section-title">Comprehensive CA Services</h2>
 
-    <div class="service-card">
-      <h3>Income Tax Filing</h3>
-      <p>Filing ITR for individuals, professionals, and businesses. Tax saving consultancy also available.</p>
+    <!-- Income Tax Services -->
+    <div class="service-expanded">
+      <div class="service-header" onclick="toggleServiceDetails('income-tax')">
+        <h3>Income Tax Services</h3>
+        <span class="expand-icon">▼</span>
+      </div>
+      <div id="income-tax" class="service-details">
+        <p>Comprehensive income tax solutions for individuals, businesses, and professionals with expert guidance and compliance support.</p>
+        <div class="task-list">
+          <div class="task-item">
+            <h4>Individual ITR Filing (Form 1, 2, 3, 4)</h4>
+            <p class="price">₹1,500 - ₹5,000</p>
+          </div>
+          <div class="task-item">
+            <h4>Business ITR Filing (Form 5, 6, 7)</h4>
+            <p class="price">₹5,000 - ₹15,000</p>
+          </div>
+          <div class="task-item">
+            <h4>Tax Planning & Consultation</h4>
+            <p class="price">₹2,000 - ₹8,000</p>
+          </div>
+          <div class="task-item">
+            <h4>Tax Notice Handling</h4>
+            <p class="price">₹3,000 - ₹10,000</p>
+          </div>
+          <div class="task-item">
+            <h4>Refund Processing</h4>
+            <p class="price">₹1,000 - ₹3,000</p>
+          </div>
+          <div class="task-item">
+            <h4>Advance Tax Computation</h4>
+            <p class="price">₹1,500 - ₹4,000</p>
+          </div>
+        </div>
+        <button class="view-pricing-btn" onclick="scrollToPricing('income-tax')">View Detailed Pricing</button>
+      </div>
     </div>
 
-    <div class="service-card">
-      <h3>GST Registration & Filing</h3>
-      <p>Complete GST services including registration, return filing, and reconciliation.</p>
+    <!-- GST Services -->
+    <div class="service-expanded">
+      <div class="service-header" onclick="toggleServiceDetails('gst')">
+        <h3>GST Services</h3>
+        <span class="expand-icon">▼</span>
+      </div>
+      <div id="gst" class="service-details">
+        <p>Complete GST compliance solutions including registration, return filing, audit, and reconciliation services.</p>
+        <div class="task-list">
+          <div class="task-item">
+            <h4>GST Registration</h4>
+            <p class="price">₹2,000 - ₹5,000</p>
+          </div>
+          <div class="task-item">
+            <h4>Monthly/Quarterly GST Return Filing</h4>
+            <p class="price">₹800 - ₹2,500 per return</p>
+          </div>
+          <div class="task-item">
+            <h4>Annual GST Return (GSTR-9)</h4>
+            <p class="price">₹3,000 - ₹8,000</p>
+          </div>
+          <div class="task-item">
+            <h4>GST Audit</h4>
+            <p class="price">₹10,000 - ₹25,000</p>
+          </div>
+          <div class="task-item">
+            <h4>GST Reconciliation</h4>
+            <p class="price">₹2,500 - ₹7,000</p>
+          </div>
+          <div class="task-item">
+            <h4>GST Notice Response</h4>
+            <p class="price">₹3,000 - ₹12,000</p>
+          </div>
+        </div>
+        <button class="view-pricing-btn" onclick="scrollToPricing('gst')">View Detailed Pricing</button>
+      </div>
     </div>
 
-    <div class="service-card">
-      <h3>Audit & Assurance</h3>
-      <p>Statutory audits, internal audits, and management audits for companies and firms.</p>
+    <!-- Audit & Assurance -->
+    <div class="service-expanded">
+      <div class="service-header" onclick="toggleServiceDetails('audit')">
+        <h3>Audit & Assurance</h3>
+        <span class="expand-icon">▼</span>
+      </div>
+      <div id="audit" class="service-details">
+        <p>Professional audit services ensuring compliance and transparency for businesses of all sizes.</p>
+        <div class="task-list">
+          <div class="task-item">
+            <h4>Statutory Audit (Company)</h4>
+            <p class="price">₹25,000 - ₹1,00,000</p>
+          </div>
+          <div class="task-item">
+            <h4>Tax Audit (Section 44AB)</h4>
+            <p class="price">₹15,000 - ₹50,000</p>
+          </div>
+          <div class="task-item">
+            <h4>Internal Audit</h4>
+            <p class="price">₹20,000 - ₹80,000</p>
+          </div>
+          <div class="task-item">
+            <h4>Stock Audit</h4>
+            <p class="price">₹10,000 - ₹40,000</p>
+          </div>
+          <div class="task-item">
+            <h4>Bank Audit</h4>
+            <p class="price">₹8,000 - ₹30,000</p>
+          </div>
+          <div class="task-item">
+            <h4>Management Audit</h4>
+            <p class="price">₹15,000 - ₹60,000</p>
+          </div>
+        </div>
+        <button class="view-pricing-btn" onclick="scrollToPricing('audit')">View Detailed Pricing</button>
+      </div>
     </div>
 
-    <div class="service-card">
-      <h3>Business Registration</h3>
-      <p>Company, LLP, and partnership firm registration along with compliance services.</p>
+    <!-- Business Registration -->
+    <div class="service-expanded">
+      <div class="service-header" onclick="toggleServiceDetails('registration')">
+        <h3>Business Registration</h3>
+        <span class="expand-icon">▼</span>
+      </div>
+      <div id="registration" class="service-details">
+        <p>Complete business registration services for all entity types with end-to-end documentation support.</p>
+        <div class="task-list">
+          <div class="task-item">
+            <h4>Private Limited Company Registration</h4>
+            <p class="price">₹15,000 - ₹30,000</p>
+          </div>
+          <div class="task-item">
+            <h4>LLP Registration</h4>
+            <p class="price">₹8,000 - ₹20,000</p>
+          </div>
+          <div class="task-item">
+            <h4>Partnership Firm Registration</h4>
+            <p class="price">₹5,000 - ₹15,000</p>
+          </div>
+          <div class="task-item">
+            <h4>Proprietorship Registration</h4>
+            <p class="price">₹2,000 - ₹8,000</p>
+          </div>
+          <div class="task-item">
+            <h4>MSME Registration</h4>
+            <p class="price">₹1,500 - ₹4,000</p>
+          </div>
+          <div class="task-item">
+            <h4>Import Export Code (IEC)</h4>
+            <p class="price">₹3,000 - ₹8,000</p>
+          </div>
+        </div>
+        <button class="view-pricing-btn" onclick="scrollToPricing('registration')">View Detailed Pricing</button>
+      </div>
     </div>
 
-    <div class="service-card">
-      <h3>Financial Planning</h3>
-      <p>Helping clients with budgeting, investment advisory, and long-term financial goals.</p>
+    <!-- TDS/TCS Services -->
+    <div class="service-expanded">
+      <div class="service-header" onclick="toggleServiceDetails('tds')">
+        <h3>TDS/TCS Services</h3>
+        <span class="expand-icon">▼</span>
+      </div>
+      <div id="tds" class="service-details">
+        <p>Comprehensive TDS/TCS compliance services including filing, certification, and notice handling.</p>
+        <div class="task-list">
+          <div class="task-item">
+            <h4>TDS Return Filing (Quarterly)</h4>
+            <p class="price">₹2,000 - ₹6,000</p>
+          </div>
+          <div class="task-item">
+            <h4>TDS Certificate (Form 16/16A)</h4>
+            <p class="price">₹1,000 - ₹3,000</p>
+          </div>
+          <div class="task-item">
+            <h4>TDS Notice Handling</h4>
+            <p class="price">₹3,000 - ₹10,000</p>
+          </div>
+          <div class="task-item">
+            <h4>TDS Reconciliation</h4>
+            <p class="price">₹2,500 - ₹7,000</p>
+          </div>
+          <div class="task-item">
+            <h4>Lower/Nil TDS Certificate</h4>
+            <p class="price">₹2,000 - ₹6,000</p>
+          </div>
+          <div class="task-item">
+            <h4>TDS Survey Assistance</h4>
+            <p class="price">₹5,000 - ₹15,000</p>
+          </div>
+        </div>
+        <button class="view-pricing-btn" onclick="scrollToPricing('tds')">View Detailed Pricing</button>
+      </div>
     </div>
+
+    <!-- ROC Compliance -->
+    <div class="service-expanded">
+      <div class="service-header" onclick="toggleServiceDetails('roc')">
+        <h3>ROC Compliance</h3>
+        <span class="expand-icon">▼</span>
+      </div>
+      <div id="roc" class="service-details">
+        <p>Complete ROC compliance services for companies ensuring regulatory adherence and timely filings.</p>
+        <div class="task-list">
+          <div class="task-item">
+            <h4>Annual ROC Filing (Private Limited)</h4>
+            <p class="price">₹8,000 - ₹20,000</p>
+          </div>
+          <div class="task-item">
+            <h4>Director KYC (DIR-3 KYC)</h4>
+            <p class="price">₹1,000 - ₹2,500</p>
+          </div>
+          <div class="task-item">
+            <h4>DIN Application</h4>
+            <p class="price">₹1,500 - ₹3,000</p>
+          </div>
+          <div class="task-item">
+            <h4>Increase in Authorized Capital</h4>
+            <p class="price">₹5,000 - ₹15,000</p>
+          </div>
+          <div class="task-item">
+            <h4>Change of Registered Office</h4>
+            <p class="price">₹5,000 - ₹12,000</p>
+          </div>
+          <div class="task-item">
+            <h4>Board Meeting Minutes</h4>
+            <p class="price">₹2,000 - ₹6,000</p>
+          </div>
+        </div>
+        <button class="view-pricing-btn" onclick="scrollToPricing('roc')">View Detailed Pricing</button>
+      </div>
+    </div>
+
+    <!-- Financial Advisory -->
+    <div class="service-expanded">
+      <div class="service-header" onclick="toggleServiceDetails('advisory')">
+        <h3>Financial Advisory</h3>
+        <span class="expand-icon">▼</span>
+      </div>
+      <div id="advisory" class="service-details">
+        <p>Expert financial advisory services for planning, investment, and business growth strategies.</p>
+        <div class="task-list">
+          <div class="task-item">
+            <h4>Financial Planning Consultation</h4>
+            <p class="price">₹3,000 - ₹10,000</p>
+          </div>
+          <div class="task-item">
+            <h4>Investment Advisory</h4>
+            <p class="price">₹2,500 - ₹8,000</p>
+          </div>
+          <div class="task-item">
+            <h4>Business Valuation</h4>
+            <p class="price">₹10,000 - ₹30,000</p>
+          </div>
+          <div class="task-item">
+            <h4>Loan Documentation</h4>
+            <p class="price">₹5,000 - ₹15,000</p>
+          </div>
+          <div class="task-item">
+            <h4>Project Reports</h4>
+            <p class="price">₹8,000 - ₹25,000</p>
+          </div>
+          <div class="task-item">
+            <h4>Cash Flow Management</h4>
+            <p class="price">₹4,000 - ₹12,000</p>
+          </div>
+        </div>
+        <button class="view-pricing-btn" onclick="scrollToPricing('advisory')">View Detailed Pricing</button>
+      </div>
+    </div>
+
+    <!-- Other Services -->
+    <div class="service-expanded">
+      <div class="service-header" onclick="toggleServiceDetails('other')">
+        <h3>Other Services</h3>
+        <span class="expand-icon">▼</span>
+      </div>
+      <div id="other" class="service-details">
+        <p>Additional professional services to support your business operations and compliance needs.</p>
+        <div class="task-list">
+          <div class="task-item">
+            <h4>Bookkeeping Services</h4>
+            <p class="price">₹3,000 - ₹15,000 per month</p>
+          </div>
+          <div class="task-item">
+            <h4>Payroll Processing</h4>
+            <p class="price">₹2,000 - ₹8,000 per month</p>
+          </div>
+          <div class="task-item">
+            <h4>Visa Documentation</h4>
+            <p class="price">₹3,000 - ₹10,000</p>
+          </div>
+          <div class="task-item">
+            <h4>Loan Syndication</h4>
+            <p class="price">₹10,000 - ₹50,000</p>
+          </div>
+          <div class="task-item">
+            <h4>Legal Documentation</h4>
+            <p class="price">₹5,000 - ₹20,000</p>
+          </div>
+          <div class="task-item">
+            <h4>Due Diligence</h4>
+            <p class="price">₹15,000 - ₹60,000</p>
+          </div>
+        </div>
+        <button class="view-pricing-btn" onclick="scrollToPricing('other')">View Detailed Pricing</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing-section">
+    <h2 class="section-title">Service Pricing</h2>
+
+    <!-- Filter Buttons -->
+    <div class="filter-buttons">
+      <button class="filter-btn active" onclick="filterPricing('all')">All Services</button>
+      <button class="filter-btn" onclick="filterPricing('income-tax')">Income Tax</button>
+      <button class="filter-btn" onclick="filterPricing('gst')">GST</button>
+      <button class="filter-btn" onclick="filterPricing('audit')">Audit</button>
+      <button class="filter-btn" onclick="filterPricing('registration')">Registration</button>
+      <button class="filter-btn" onclick="filterPricing('packages')">Packages</button>
+    </div>
+
+    <!-- Pricing Table -->
+    <div class="pricing-table" id="pricing-table">
+      <!-- Income Tax Services -->
+      <div class="service-category" data-category="income-tax">
+        <h3>Income Tax Services</h3>
+        <div class="price-row">
+          <span class="service-name">Individual ITR Filing (Form 1, 2, 3, 4)</span>
+          <span class="price-range">₹1,500 - ₹5,000</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">Business ITR Filing (Form 5, 6, 7)</span>
+          <span class="price-range">₹5,000 - ₹15,000</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">Tax Planning & Consultation</span>
+          <span class="price-range">₹2,000 - ₹8,000</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">Tax Notice Handling</span>
+          <span class="price-range">₹3,000 - ₹10,000</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">Refund Processing</span>
+          <span class="price-range">₹1,000 - ₹3,000</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">Advance Tax Computation</span>
+          <span class="price-range">₹1,500 - ₹4,000</span>
+        </div>
+      </div>
+
+      <!-- GST Services -->
+      <div class="service-category" data-category="gst">
+        <h3>GST Services</h3>
+        <div class="price-row">
+          <span class="service-name">GST Registration</span>
+          <span class="price-range">₹2,000 - ₹5,000</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">Monthly/Quarterly GST Return Filing</span>
+          <span class="price-range">₹800 - ₹2,500 per return</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">Annual GST Return (GSTR-9)</span>
+          <span class="price-range">₹3,000 - ₹8,000</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">GST Audit</span>
+          <span class="price-range">₹10,000 - ₹25,000</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">GST Reconciliation</span>
+          <span class="price-range">₹2,500 - ₹7,000</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">GST Notice Response</span>
+          <span class="price-range">₹3,000 - ₹12,000</span>
+        </div>
+      </div>
+
+      <!-- Audit & Assurance -->
+      <div class="service-category" data-category="audit">
+        <h3>Audit & Assurance</h3>
+        <div class="price-row">
+          <span class="service-name">Statutory Audit (Company)</span>
+          <span class="price-range">₹25,000 - ₹1,00,000</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">Tax Audit (Section 44AB)</span>
+          <span class="price-range">₹15,000 - ₹50,000</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">Internal Audit</span>
+          <span class="price-range">₹20,000 - ₹80,000</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">Stock Audit</span>
+          <span class="price-range">₹10,000 - ₹40,000</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">Bank Audit</span>
+          <span class="price-range">₹8,000 - ₹30,000</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">Management Audit</span>
+          <span class="price-range">₹15,000 - ₹60,000</span>
+        </div>
+      </div>
+
+      <!-- Business Registration -->
+      <div class="service-category" data-category="registration">
+        <h3>Business Registration</h3>
+        <div class="price-row">
+          <span class="service-name">Private Limited Company Registration</span>
+          <span class="price-range">₹15,000 - ₹30,000</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">LLP Registration</span>
+          <span class="price-range">₹8,000 - ₹20,000</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">Partnership Firm Registration</span>
+          <span class="price-range">₹5,000 - ₹15,000</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">Proprietorship Registration</span>
+          <span class="price-range">₹2,000 - ₹8,000</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">MSME Registration</span>
+          <span class="price-range">₹1,500 - ₹4,000</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">Import Export Code (IEC)</span>
+          <span class="price-range">₹3,000 - ₹8,000</span>
+        </div>
+      </div>
+
+      <!-- TDS/TCS Services -->
+      <div class="service-category" data-category="tds">
+        <h3>TDS/TCS Services</h3>
+        <div class="price-row">
+          <span class="service-name">TDS Return Filing (Quarterly)</span>
+          <span class="price-range">₹2,000 - ₹6,000</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">TDS Certificate (Form 16/16A)</span>
+          <span class="price-range">₹1,000 - ₹3,000</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">TDS Notice Handling</span>
+          <span class="price-range">₹3,000 - ₹10,000</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">TDS Reconciliation</span>
+          <span class="price-range">₹2,500 - ₹7,000</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">Lower/Nil TDS Certificate</span>
+          <span class="price-range">₹2,000 - ₹6,000</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">TDS Survey Assistance</span>
+          <span class="price-range">₹5,000 - ₹15,000</span>
+        </div>
+      </div>
+
+      <!-- ROC Compliance -->
+      <div class="service-category" data-category="roc">
+        <h3>ROC Compliance</h3>
+        <div class="price-row">
+          <span class="service-name">Annual ROC Filing (Private Limited)</span>
+          <span class="price-range">₹8,000 - ₹20,000</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">Director KYC (DIR-3 KYC)</span>
+          <span class="price-range">₹1,000 - ₹2,500</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">DIN Application</span>
+          <span class="price-range">₹1,500 - ₹3,000</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">Increase in Authorized Capital</span>
+          <span class="price-range">₹5,000 - ₹15,000</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">Change of Registered Office</span>
+          <span class="price-range">₹5,000 - ₹12,000</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">Board Meeting Minutes</span>
+          <span class="price-range">₹2,000 - ₹6,000</span>
+        </div>
+      </div>
+
+      <!-- Financial Advisory -->
+      <div class="service-category" data-category="advisory">
+        <h3>Financial Advisory</h3>
+        <div class="price-row">
+          <span class="service-name">Financial Planning Consultation</span>
+          <span class="price-range">₹3,000 - ₹10,000</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">Investment Advisory</span>
+          <span class="price-range">₹2,500 - ₹8,000</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">Business Valuation</span>
+          <span class="price-range">₹10,000 - ₹30,000</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">Loan Documentation</span>
+          <span class="price-range">₹5,000 - ₹15,000</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">Project Reports</span>
+          <span class="price-range">₹8,000 - ₹25,000</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">Cash Flow Management</span>
+          <span class="price-range">₹4,000 - ₹12,000</span>
+        </div>
+      </div>
+
+      <!-- Other Services -->
+      <div class="service-category" data-category="other">
+        <h3>Other Services</h3>
+        <div class="price-row">
+          <span class="service-name">Bookkeeping Services</span>
+          <span class="price-range">₹3,000 - ₹15,000 per month</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">Payroll Processing</span>
+          <span class="price-range">₹2,000 - ₹8,000 per month</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">Visa Documentation</span>
+          <span class="price-range">₹3,000 - ₹10,000</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">Loan Syndication</span>
+          <span class="price-range">₹10,000 - ₹50,000</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">Legal Documentation</span>
+          <span class="price-range">₹5,000 - ₹20,000</span>
+        </div>
+        <div class="price-row">
+          <span class="service-name">Due Diligence</span>
+          <span class="price-range">₹15,000 - ₹60,000</span>
+        </div>
+      </div>
+
+      <!-- Package Deals -->
+      <div class="service-category packages" data-category="packages">
+        <h3>Package Deals</h3>
+        <div class="package-card">
+          <h4>Startup Package</h4>
+          <p class="package-price">₹25,000</p>
+          <ul>
+            <li>Company Registration</li>
+            <li>GST Registration</li>
+            <li>Bank Account Opening Assistance</li>
+            <li>Basic Bookkeeping (3 months)</li>
+            <li>Initial Tax Planning</li>
+          </ul>
+          <button class="get-quote-btn" onclick="openInquiryForm('Startup Package')">Get Quote</button>
+        </div>
+
+        <div class="package-card">
+          <h4>Business Compliance Package</h4>
+          <p class="package-price">₹35,000/year</p>
+          <ul>
+            <li>Quarterly GST Return Filing</li>
+            <li>Quarterly TDS Return Filing</li>
+            <li>Annual ROC Compliance</li>
+            <li>Annual Tax Filing</li>
+            <li>Basic Financial Advisory</li>
+          </ul>
+          <button class="get-quote-btn" onclick="openInquiryForm('Business Compliance Package')">Get Quote</button>
+        </div>
+
+        <div class="package-card">
+          <h4>Complete CA Services</h4>
+          <p class="package-price">₹60,000/year</p>
+          <ul>
+            <li>All compliance services</li>
+            <li>Monthly bookkeeping</li>
+            <li>Quarterly financial review</li>
+            <li>Tax planning throughout year</li>
+            <li>Priority consultation</li>
+            <li>Audit support</li>
+          </ul>
+          <button class="get-quote-btn" onclick="openInquiryForm('Complete CA Services')">Get Quote</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Inquiry Form -->
+  <section class="inquiry-section">
+    <h2 class="section-title">Service Inquiry</h2>
+    <form class="inquiry-form" id="inquiryForm" onsubmit="submitInquiry(event)">
+      <div class="form-group">
+        <label for="service">Select Service *</label>
+        <select id="service" name="service" required>
+          <option value="">Choose a service...</option>
+          <optgroup label="Income Tax Services">
+            <option value="Individual ITR Filing">Individual ITR Filing</option>
+            <option value="Business ITR Filing">Business ITR Filing</option>
+            <option value="Tax Planning & Consultation">Tax Planning & Consultation</option>
+            <option value="Tax Notice Handling">Tax Notice Handling</option>
+          </optgroup>
+          <optgroup label="GST Services">
+            <option value="GST Registration">GST Registration</option>
+            <option value="GST Return Filing">GST Return Filing</option>
+            <option value="GST Audit">GST Audit</option>
+          </optgroup>
+          <optgroup label="Audit Services">
+            <option value="Statutory Audit">Statutory Audit</option>
+            <option value="Tax Audit">Tax Audit</option>
+            <option value="Internal Audit">Internal Audit</option>
+          </optgroup>
+          <optgroup label="Business Registration">
+            <option value="Private Limited Company">Private Limited Company</option>
+            <option value="LLP Registration">LLP Registration</option>
+            <option value="Partnership Firm">Partnership Firm</option>
+          </optgroup>
+          <optgroup label="Packages">
+            <option value="Startup Package">Startup Package</option>
+            <option value="Business Compliance Package">Business Compliance Package</option>
+            <option value="Complete CA Services">Complete CA Services</option>
+          </optgroup>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="name">Your Name *</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="phone">Phone Number *</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10-digit mobile number" required>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Specific Requirements</label>
+        <textarea id="message" name="message" rows="4" placeholder="Please describe your specific requirements or questions..."></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn">Send Inquiry</button>
+      <div class="form-message" id="formMessage"></div>
+    </form>
   </section>
 
   <!-- Qualifications Section -->
